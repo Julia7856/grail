@@ -6,8 +6,9 @@ Grail GUI - Графический интерфейс
 
 import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox
-from ai_detector import PIIDetector
+from ai_detector import RegexPIIDetector
 from core import GrailVault
+
 
 class GrailGUI:
     def __init__(self, root):
@@ -30,7 +31,7 @@ class GrailGUI:
         self.root.configure(bg=self.colors['bg_secondary'])
         
         # Инициализация модулей
-        self.detector = PIIDetector()
+        self.detector = RegexPIIDetector()
         self.vault = GrailVault()
         
         # Создание интерфейса
@@ -108,7 +109,7 @@ class GrailGUI:
         
         self.btn_clear = tk.Button(
             button_frame,
-            text="️ ОЧИСТИТЬ",
+            text="🗑️ ОЧИСТИТЬ",
             font=("Helvetica", 12),
             bg='#4A5568',
             fg=self.colors['text'],
@@ -188,7 +189,7 @@ class GrailGUI:
 🛡️ ЗАЩИЩЕННЫЙ ТЕКСТ:
 {protected_text}
 
- ХЭШ ЦЕЛОСТНОСТИ:
+🔐 ХЭШ ЦЕЛОСТНОСТИ:
 {data_hash[:32]}...
 
 ✅ Данные успешно защищены и зашифрованы!
@@ -214,6 +215,7 @@ class GrailGUI:
         self.text_output.delete("1.0", tk.END)
         self.text_output.config(state='disabled')
         self.status_label.config(text="✅ Готов к работе", fg=self.colors['text_secondary'])
+
 
 # === ЗАПУСК ПРИЛОЖЕНИЯ ===
 if __name__ == "__main__":
