@@ -4,17 +4,16 @@ Grail Main Application (International Edition)
 Универсальная система защиты данных для глобального использования.
 """
 
-# Импортируем наши модули (они лежат в одной папке и видят друг друга)
 from core import GrailVault
-from ai_detector import PIIDetector
+from ai_detector import RegexPIIDetector
+
 
 class GrailApp:
     def __init__(self):
         print("🏆 Запуск глобальной системы защиты Grail...")
-        # Инициализируем механизмы
         self.vault = GrailVault()
-        self.detector = PIIDetector()
-        print("✅ Все модули загружены. Готов к международной работе.\n")
+        self.detector = RegexPIIDetector()
+        print("✅ Все модули загружены. Готов к работе.\n")
 
     def process_document(self, document_text: str):
         """Полный цикл обработки: Поиск -> Защита -> Шифрование"""
@@ -22,8 +21,8 @@ class GrailApp:
         print("📥 НАЧАЛО ОБРАБОТКИ ДОКУМЕНТА")
         print("=" * 60)
         
-        # 1. AI-анализ текста
-        print("\n🔍 Шаг 1: AI-сканирование на наличие личных данных...")
+        # 1. Regex-анализ текста
+        print("\n🔍 Шаг 1: Regex-сканирование на наличие личных данных...")
         found_pii = self.detector.detect_pii(document_text)
         
         if found_pii:
@@ -38,7 +37,7 @@ class GrailApp:
         protected_text = self.detector.redact_pii(document_text, replacement="[ЗАШИФРОВАНО]")
         
         # 3. Криптографическое шифрование всего документа
-        print("\n🔒 Шаг 3: Криптографическое шифрование (AES-256)...")
+        print("\n🔒 Шаг 3: Криптографическое шифрование (AES-256-GCM)...")
         encrypted_data, data_hash = self.vault.secure_process(protected_text)
         print(f"✅ Документ зашифрован. Хэш целостности: {data_hash[:16]}...")
         
@@ -48,12 +47,10 @@ class GrailApp:
         
         return encrypted_data, data_hash, protected_text
 
-# --- СИМУЛЯЦИЯ РАБОТЫ ПРИЛОЖЕНИЯ ---
+
 if __name__ == "__main__":
-    # Запускаем наше приложение
     app = GrailApp()
     
-    # Тестовый документ: Международный контракт
     global_contract = """
     INTERNATIONAL SERVICE AGREEMENT
     
@@ -81,10 +78,8 @@ if __name__ == "__main__":
     IP Address for portal access: 192.168.1.100
     """
     
-    # Обрабатываем документ
     encrypted, hash_val, protected = app.process_document(global_contract)
     
-    # Показываем, как теперь выглядит документ для посторонних глаз
     print("\n👁️ Как теперь выглядит документ (безопасная версия):")
     print("-" * 60)
     print(protected)
