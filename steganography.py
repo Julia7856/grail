@@ -1,6 +1,3 @@
-False
-            
-            # Встраиваем 
 """
 Grail Steganography Module
 Скрытие данных внутри изображений методом LSB (Least Significant Bit).
