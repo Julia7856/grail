@@ -1,0 +1,30 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run core demo
+        run: python core.py
+      - name: Run quantum demo
+        run: python quantum_core.py
+      - name: Run self-destruct demo
+        run: python self_destruct.py
+      - name: Run PII detector demo
+        run: python ai_detector.py
+      - name: Run steganography demo
+        run: python steganography.py
+      - name: Run blockchain audit demo
+        run: python blockchain_audit.py
+      - name: Run main demo
+        run: python main.py
+      - name: Run ultimate demo
+        run: python ultimate_grail.py
