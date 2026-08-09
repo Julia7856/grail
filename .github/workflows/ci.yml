@@ -11,7 +11,9 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt pytest
+      - name: Run tests
+        run: python -m pytest tests/ -v
       - name: Run core demo
         run: python core.py
       - name: Run quantum demo
