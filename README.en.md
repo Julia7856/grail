@@ -22,6 +22,8 @@ Grail is an international-grade data protection tool. A regex detector finds per
 
 ### 🖼️ Steganography
 - Hides encrypted data inside PNG/BMP images (LSB method)
+- Honest disclosure: LSB is detectable by statistical steganalysis — this is obfuscation, not perfect invisibility
+- Confidentiality is guaranteed by AES-256-GCM encryption — steganography only masks the fact of transmission
 - Message-length protocol (32-bit prefix)
 
 ### 🔗 Blockchain Audit
