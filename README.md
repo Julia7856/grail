@@ -55,7 +55,7 @@ python main.py
 
 ```
 python gui.py
-```
+~~~
 
 ---
 
@@ -98,11 +98,7 @@ python gui.py
 
 ## 💝 Поддержать автора (добровольно)
 
-Grail живёт на энтузиазме. Если он стал твоей цифровой святыней — поддержи любой суммой.
-
-```
-TON / USDT (сеть TON): UQBYmt79Nb9DSmS7Zc6tgTXjBKMPf700kaD6WibcDT90KXiB
-~~~
+Если Grail помог тебе — можно поддержать проект. Кошелёк и подробности: [PRICING.md](PRICING.md).
 
 Спасибо 🙏
 
