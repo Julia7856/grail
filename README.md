@@ -50,7 +50,6 @@ Grail — это инструмент защиты данных междунар
 pip install -r requirements.txt
 python main.py
 ```
-
 Графический интерфейс «Gutsy Little Guardian»:
 
 ```
