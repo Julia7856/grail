@@ -1,84 +1,105 @@
-# 🏆 Grail — Как пользоваться и как поддержать
+# 🏆 Grail — Тарифы и лицензии / Pricing & Licensing
 
-Grail бесплатен. Код открыт. Лицензия — GPL v3.0.
-Если он оказался полезен — поддержи. Если нет — всё равно пользуйся.
+Твоя цифровая святыня заслуживает честных условий. Ниже — что бесплатно, что платно и как поддержать автора. 🌍 English below each block.
+Your digital sanctuary deserves honest terms. Below: what is free, what is paid, and how to support the author.
 
----
-
-## 🟢 Что внутри бесплатно
-
-Всё, что есть в репозитории — твоё:
-
-- ✅ AES-256-GCM
-- ✅ Regex-детектор PII
-- ✅ Стеганография LSB (PNG/BMP)
-- ✅ Blockchain Audit
-- ✅ Self-Destruct
-- ✅ Консольный интерфейс
-
-Лицензия: **GNU GPL v3.0** — используй, меняй, распространяй свободно.
+**Ядро во всех редакциях / Core in all editions:** AES-256-GCM — промышленный стандарт шифрования (NIST) / industrial encryption standard.
+**Roadmap v1.1:** постквантовое шифрование Kyber-1024 (стандарт NIST PQC) / post-quantum encryption Kyber-1024 (NIST PQC standard).
 
 ---
 
-## 💛 Если хочешь платно
+## 🟢 Grail Community — Бесплатно / Free
 
-Для бизнеса и корпоратов — две платные опции:
+*Неприкосновенная. Локальная. Вечная. И бесплатная навсегда.*
+*Inviolable. Local. Eternal. And free forever.*
 
-**Pro** — GUI, Presidio (ML-детектор PII), расширенная стеганография, дашборд, поддержка.
-**Enterprise** — On-Premise, SLA, договор, сертификация, Kyber-1024.
+**Идеально для студентов, исследователей, личного использования / Perfect for students, researchers, personal use.**
 
-Лицензия: **Commercial License** поверх GPL.
-Оплата: крипта или счёт.
+- 🔐 **AES-256-GCM** — уникальные ключи для каждого сообщения, защита от атак на GCM
+- 🔍 **Regex-детектор PII** — находит телефоны, email, паспорта, банковские карты, ИНН, СНИЛС, IP
+- 🖼️ **Стеганография LSB** — прячет данные внутри обычных картинок (PNG/BMP)
+- ⛓️ **Blockchain Audit** — неизменяемый журнал событий
+- 💥 **Self-Destruct** — гарантирует, что ключи никогда не попадут в чужие руки
+- 💻 **Консольный интерфейс** (`main.py`) — работает локально, без отправки данных в интернет
 
-Заявка через [Issues](https://github.com/Julia7856/grail/issues) — шаблон **Commercial License Inquiry**.
-Отвечаю в течение 24 часов.
-
----
-
-## 💝 Добровольная поддержка
-
-Grail живёт на энтузиазме автора. Если он тебе помог — кинь, сколько считаешь справедливым. Любая сумма важна.
-**Юрлица и ИП (РФ):** счёт через Issues — ниже.
+**Лицензия / License:** GNU GPL v3.0 — используй, модифицируй, распространяй свободно / use, modify, distribute freely.
 
 ---
 
-## 📞 Заявка на лицензию
+## 🟡 Grail Pro — Индивидуальный расчёт / Custom pricing
 
-1. [Issues](https://github.com/Julia7856/grail/issues) → **New issue**
-2. Шаблон **Commercial License Inquiry**
-3. Опиши задачу — ответ в течение 24 часов
+*Максимальная защита для фрилансеров, юристов, врачей, частных консультантов.*
+*Maximum protection for freelancers, lawyers, doctors, private consultants.*
 
----
+**Всё из Community, плюс / Everything from Community, plus:**
 
-## 📜 Лицензии
+- 🎨 **Графический интерфейс (GUI)** — «Gutsy Little Guardian» с визуальным хранилищем паролей
+- 🤖 **Microsoft Presidio** — ML-детектор PII (NER) для профессионального поиска личных данных
+- 🔍 **Расширенная стеганография** — DCT-метод, адаптивные алгоритмы
+- 📊 **Аналитический дашборд** — видимость всех операций защиты
+- 📞 **Приоритетная поддержка** — отвечаю в течение 24 часов
 
-- **Community** — GNU GPL v3.0: используй, модифицируй, распространяй свободно.
-- **Pro / Enterprise** — Commercial License поверх GPL: расширенный функционал, поддержка, ответственность.
-
-Полный текст: [LICENSE](LICENSE)
-
----
-
-## 💝 Поддержать автора
-
-Grail живёт на энтузиазме. Если полезен — кинь на кофе:Спасибо 🙏
+**Лицензия / License:** Commercial License (сверх GPL / beyond GPL).
+**Оплата / Payment:** крипта или счёт / crypto or invoice.
+**Как купить / How to buy:** заявка через [Issues](https://github.com/Julia7856/grail/issues) — шаблон **Commercial License Inquiry**.
 
 ---
 
-## 🔍 CryptoAudit — от того же автора
+## 🟣 Grail Enterprise — Индивидуальный расчёт / Custom pricing
+
+*Абсолютная безопасность для банков, медицинских холдингов, юридических фирм.*
+*Absolute security for banks, healthcare holdings, law firms.*
+
+**Всё из Pro, плюс / Everything from Pro, plus:**
+
+- 🏢 **On-Premise** — установка на твои сервера, данные не покидают периметр
+- 🛡️ **SLA 99.9%** — юридическая ответственность по договору
+- 👨‍💻 **Выделенная поддержка** — персональный менеджер
+- 🔐 **Kyber-1024** — постквантовое шифрование (в v1.1)
+- 📜 **Сертификация** — под требования заказчика
+
+**Лицензия / License:** Commercial License.
+**Оплата / Payment:** официальный договор с юрлицами, счета, закрывающие документы / official contract, invoices, receipts.
+
+---
+
+## 💝 Добровольная поддержка / Voluntary Support
+
+Grail живёт на энтузиазме автора. Если он стал твоей цифровой святыней — поддержи. Любая сумма важна.
+Grail lives on the author's enthusiasm. If it became your digital sanctuary — support it. Any amount matters.
+
+```
+TON / USDT (сеть TON / TON network): UQBYmt79Nb9DSmS7Zc6tgTXjBKMPf700kaD6WibcDT90KXiB
+~~~
+
+Спасибо 🙏 / Thank you.
+
+---
+
+## 📜 Лицензирование / Licensing
+
+- **Community** — GNU GPL v3.0: свободное использование, модификация, распространение с сохранением лицензии / free use, modification, distribution while preserving license.
+- **Pro / Enterprise** — Commercial License (сверх GPL / beyond GPL): расширенный функционал, поддержка, договорная ответственность / extended features, support, contractual responsibility.
+
+Полный текст / Full text: [LICENSE](LICENSE)
+
+---
+
+## 🔍 CryptoAudit — от того же автора / from the same author
 
 Вставь Python крипто-код → получи отчёт безопасности.
+Paste Python crypto code → get a security report.
 
-| Tier | Что | Цена |
+| Tier | Что / What | Цена / Price |
 |---|---|---|
-| 🆓 Free | веб-демо, базовые проверки | $0 |
-| 📄 Full | 12 проверок + отчёт | $5 |
-| 🧑‍💻 Human | ручной аудит + threat model | $150 |
+| 🆓 Free | веб-демо, все проверки / web demo, all checks | $0 |
+| 💝 Support | добровольно, если аудит помог / voluntary, if audit helped | сколько считаешь справедливым / as you see fit |
 
-Демо: https://julia7856.github.io/crypto-audit/
-Оплата — на кошелёк выше.
+**Демо / Demo:** https://julia7856.github.io/crypto-audit/
 
 ---
 
-**— Julia7856**
-Автор Grail, Lantern, CryptoAudit.
+**— Julia7856 / Юлия**
+Автор Grail, Lantern, CryptoAudit / Author of Grail, Lantern, CryptoAudit.
+
+**Grail International. Твоя приватность — наша миссия / Your privacy is our mission.**
