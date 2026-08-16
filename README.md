@@ -52,7 +52,7 @@ python main.py
 ```
 Графический интерфейс «Gutsy Little Guardian»:
 
-```
+~~~
 python gui.py
 ~~~
 
