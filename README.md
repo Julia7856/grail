@@ -20,7 +20,7 @@ Grail — это инструмент защиты данных междунар
 - **AES-256-GCM** — промышленный стандарт шифрования (NIST)
 - **Уникальный nonce для каждого сообщения** — защита от атак на GCM
 - Полностью локальное шифрование, без облаков
-- **Roadmap v1.1:** постквантовое шифрование Kyber-1024 (стандарт NIST PQC)
+- **Roadmap v1.1:** гибридное постквантовое шифрование ML-KEM-768 + X25519 (стандарт NIST FIPS 203) — см. [PQC_ROADMAP.md](PQC_ROADMAP.md)
 
 ### 🖼️ Стеганография
 
@@ -52,7 +52,7 @@ python main.py
 ```
 Графический интерфейс «Gutsy Little Guardian»:
 
-~~~
+```
 python gui.py
 ~~~
 
@@ -70,6 +70,7 @@ python gui.py
 - `gui.py` — графический интерфейс
 - `main.py` — консольный интерфейс
 - `ultimate_grail.py` — полный рабочий процесс
+- `crypto/pq_layer.py` — гибридный PQC-слой (v1.1 прототип)
 
 ---
 
@@ -77,6 +78,7 @@ python gui.py
 
 - [SECURITY.md](SECURITY.md) — политика безопасности
 - [THREAT_MODEL.md](THREAT_MODEL.md) — честная модель угроз: 14 угроз, реальные ограничения
+- [PQC_ROADMAP.md](PQC_ROADMAP.md) — дорога к постквантовой защите данных
 - Мы не прячем ограничения — мы их документируем
 
 ---
@@ -110,3 +112,13 @@ python gui.py
 ---
 
 **Grail International. Твоя приватность — наша миссия.**
+
+---
+
+## ⏳ Road to PQC / Дорога к PQC
+
+v1.1: hybrid PQC prototype `crypto/pq_layer.py` (ML-KEM-768 + X25519 → AES-256-GCM).
+HNDL: an archive stolen today cannot be decrypted even with a quantum computer /
+архив, украденный сегодня, не расшифровать даже с квантовым компьютером.
+
+Roadmap / план: [PQC_ROADMAP.md](PQC_ROADMAP.md)
